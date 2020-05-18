@@ -1,21 +1,31 @@
 .card-trip {
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-
-
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  margin: 32px auto;
+  max-width: 800px;
+  display: block;
+  position: relative;
 }
 
 .card-trip > img {
   height: 400px;
   width: 100%;
   object-fit: cover;
+  box-shadow: 0 0px 12px rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgb(240, 240, 240);
 }
 
 .card-trip h2 {
   font-size: 20px;
-  font-weight: bold;
   margin: 10px;
+  color: rgba(0, 0, 0, 0.7)
+}
+
+.card-trip-pricing {
+  position: absolute;
+  top: 8px;
+  right: 0;
 }
 
 .card-trip p {

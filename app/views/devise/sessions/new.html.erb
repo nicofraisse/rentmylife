@@ -1,11 +1,9 @@
 <div class="container">
   <div class="row">
     <div class="col-6 offset-3">
-
-
-
         <div class="form-inputs">
           <h2>Log in</h2>
+          <p style="color: rgba(0, 0, 0, 0.5); margin-top: 16px; margin-bottom: 32px;">Hint: for a demo account to test the app, use bob@email.com & 123123 as credientials to sign in.</p>
           <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
           <%= f.input :email,
                       required: false,
