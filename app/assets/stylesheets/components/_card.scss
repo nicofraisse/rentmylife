@@ -18,44 +18,49 @@
 
 .card-trip h2 {
   font-size: 20px;
-  margin: 10px;
-  color: rgba(0, 0, 0, 0.7)
+  margin: 12px;
+  margin-top: 24px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-.card-trip-pricing {
-  position: absolute;
-  top: 8px;
-  right: 0;
+#card-trip-pricing {
+  margin: 24px 12px !important;
+  font-size: 20px;
+  margin: 12px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .card-trip p {
-  font-size: 12px;
+  font-size: 16px;
   opacity: .7;
-  margin: 0;
+  margin-left: 12px;
+  margin-right: 12px;
+  line-height: 1.75
 }
 
 
-.card-trip .card-trip-infos {
+.card-trip-infos {
   padding:12px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   position: relative;
-
 }
 
-.card-info-all {
-  padding: 16px;
+.life-owner {
+  display: inline-block;
 }
-.card-trip-infos .card-trip-user {
+
+.life-description {
+  width: calc(100% - 188px;)
+}
+
+.card-trip-user {
   position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 70px;
-}
-
-.description {
-  line-height: 2;
+  right: 32px;
+  top: -56px;
+  width: 80px;
+  height: 80px;
 }
 
 .bookcard {

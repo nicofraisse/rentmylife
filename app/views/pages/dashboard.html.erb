@@ -1,5 +1,7 @@
 <div class="flex-profile">
-  <div class="useravatar"><%= cl_image_tag(current_user.photo)%>
+
+  <div class="useravatar">
+    <%= cl_image_tag @current_user.photo %>
   </div>
   <div>
     <h2 style="margin-bottom: 24px">Hello, <%= current_user.first_name %> <%= current_user.last_name %>
@@ -11,8 +13,6 @@
     <% end %>
   </div>
 </div>
-
-
 
 
   <div>
