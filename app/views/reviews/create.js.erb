@@ -1,9 +1,13 @@
+console.log("alksfgladskj");
+
 function refreshForm(innerHTML) {
+  console.log('refreshForm', innerHTML)
   const newReviewForm = document.getElementById('reviews-form');
   newReviewForm.innerHTML = innerHTML;
 }
 
 function addReview(reviewHTML) {
+  console.log('reviewHTML', reviewHTML)
   const reviews = document.getElementById('reviews');
   reviews.insertAdjacentHTML('beforeend', reviewHTML);
 }
