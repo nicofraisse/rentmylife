@@ -8,24 +8,19 @@
     </h2>
     <p style="text-align:left;"><%=current_user.email%> - joined in 2019</p>
     <% if current_user.lifestyles.length >= 1 %>
-      <p style="text-align:left;">Your Lifestyle: <a href="#" class=""><%= current_user.lifestyles.first.name %></a>
+
+      <p style="text-align:left;">Your Lifestyle: <%= link_to current_user.lifestyles.first.name, '/lifestyles/' + current_user.lifestyles.first.id.to_s %></a>
       </p>
     <% end %>
   </div>
 </div>
-
-
   <div>
     <ul class="list-inline tabs-underlined">
       <% if @pending_bookings != [] %>
-
         <li>
           <a href="#" class="tab-underlined">Your Pending Clients</a>
           <ul>
-
             <% @pending_bookings.each do |booking| %>
-
-
               <p><%= booking.status %></p>
               <li>Book request by <%= link_to "#{booking.user.first_name} #{booking.user.last_name}", dashboard_path(booking.user)%>
                 <br>

@@ -5,7 +5,7 @@
   <div class="form-and-results">
     <div class="the-form">
     <%= form_tag lifestyles_path, class: "form-inline", method: :get do %>
-      <%= text_field_tag :query, params[:query], class: "form-control", placeholder: "Find a lifestyle" %>
+      <%= text_field_tag :query, params[:query], class: "form-control", style: "width: 256px",  placeholder: "Find a lifestyle" %>
       <%= submit_tag "Search", class: "search-button btn btn-primary" %>
     <% end %>
     </div>

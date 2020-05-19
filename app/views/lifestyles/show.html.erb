@@ -19,13 +19,11 @@
 </div>
 
 <h2 class="text-center">Reviews</h2>
-<div class="reviews">
-  <ul>
-    <% @lifestyle.reviews.each do |review| %>
-      <li class="review"><%= render "reviews/show", review: review %></li>
-    <% end %>
-  </ul>
-</div>
+  <% @lifestyle.reviews.each do |review| %>
+    <div class="review-container">
+      <p class="review"><i class="fas fa-quote-left"></i> <%= @review.comment %> <i class="fas fa-quote-right"></i></p>
+    </div>
+  <% end %>
 
 <div class="reviews-form">
   <%= render 'reviews/form', lifestyle: @lifestyle, review: @review %>
