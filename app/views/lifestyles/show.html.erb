@@ -21,7 +21,7 @@
 <h2 class="text-center">Reviews</h2>
   <% @lifestyle.reviews.each do |review| %>
     <div class="review-container">
-      <p class="review"><i class="fas fa-quote-left"></i> <%= @review.comment %> <i class="fas fa-quote-right"></i></p>
+      <p class="review"><i class="fas fa-quote-left"></i> <%= review.comment %> <i class="fas fa-quote-right"></i></p>
     </div>
   <% end %>
 
